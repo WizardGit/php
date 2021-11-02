@@ -22,7 +22,7 @@ $state = $_POST['state'];
 $state = mysqli_real_escape_string($conn, $state);
 // this is a small attempt to avoid SQL injection
 // better to use prepared statements
-$query = "SELECT DISTINCT fname, lname FROM customer WHERE customer_num = ";
+$query = "SELECT DISTINCT fname, lname, customer_num FROM customer WHERE customer_num = ";
 $query = $query."'".$state."';";
 ?>
 
