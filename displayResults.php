@@ -28,7 +28,7 @@ inner join orders o on c.customer_num=o.customer_num
 inner join items i on o.order_num=i.order_num
 inner join stock s on i.manu_code=s.manu_code
 inner join manufact m on s.manu_code=m.manu_code
-where manu_name=";
+where m.manu_name=";
 $query = $query."'".$manu_name."' ORDER BY c.lname asc;";
 ?>
 
