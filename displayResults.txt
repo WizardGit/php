@@ -18,7 +18,7 @@ $conn = mysqli_connect($server, $user, $pass, $dbname, $port) or die('Error conn
   </head> 
     <body> 
       <section>
-      <?php  
+      <?php include
       $state = $_POST['state'];
       $state = mysqli_real_escape_string($conn, $state);
       // this is a small attempt to avoid SQL injection
