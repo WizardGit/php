@@ -32,17 +32,13 @@ where m.manu_name=";
 $query = $query."'".$state."';";
 ?>
 
-<p>
-The query:
-<p>
+<p> <h2>The query:</h2> <p>
 
 <?php
 print $query;
 ?>
 
-<p>
-Result of query:
-<p>
+<p> <h2>Result of query:</h2> <p>
 <p>
 <?php
 $result = mysqli_query($conn, $query) or die(mysqli_error($conn));
