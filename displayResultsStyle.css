@@ -13,17 +13,6 @@ body {
   color: black;
 }
 
-/* The default color of our links */
-a:link, a:visited {
-  font-weight: bold;
-  color: white;
-  text-decoration: none;
-}
-/* If the user is hovering over a link, we need to emphasize that it is a link */
-a:hover {
-  text-decoration: underline;
-  color: black;
-}
 /* Controls the words on the website */
 section {
   float: center;
@@ -33,25 +22,7 @@ section {
   background-color: rgba(0, 0, 255, 0.493);
   border-style: solid;
 }
-/* Controls the main header */
-section h1 {
-  font-size: 3em;
-  margin: 0px;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  width: 100%;
-  text-align: center;
-  background-color: red;  
-}
 
-input[type=text]{
-  border-radius: 5px;
-  padding: 5px;
-  border: 0px;
-  margin: 5px;
-}
-input[type=submit] {
-  margin: 5px;
-}
 p {
   margin: 5px;
 }

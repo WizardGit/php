@@ -12,21 +12,10 @@ body {
   background-size: cover;
   color: black;
 }
-
-/* The default color of our links */
-a:link, a:visited {
-  font-weight: bold;
-  color: white;
-  text-decoration: none;
-}
-/* If the user is hovering over a link, we need to emphasize that it is a link */
-a:hover {
-  text-decoration: underline;
-  color: black;
-}
 /* Controls the words on the website */
 section {
   float: center;
+  display: block;
   margin: 5%;
   border-width: 5px;
   border-color: black;
@@ -42,16 +31,26 @@ section h1 {
   text-align: center;
   background-color: red;  
 }
+section form {  
+  background-color: green;
+}
 
-input[type=text]{
+input[type=text]{  
+  display: block;
   border-radius: 5px;
   padding: 5px;
   border: 0px;
   margin: 5px;
 }
-input[type=submit] {
+input[type=submit], input[type=reset] {  
   margin: 5px;
+  background: linear-gradient(to right, brown, #ffad06);
+  border: 0;
+  padding: 5px;
+  border-radius: 3px;
+  font-weight: bold;
 }
+
 p {
   margin: 5px;
 }

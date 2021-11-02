@@ -37,7 +37,7 @@ print $query;
 <p>
 Result of query:
 <p>
-
+<p>
 <?php
 $result = mysqli_query($conn, $query) or die(mysqli_error($conn));
 print "<pre>";
@@ -50,7 +50,7 @@ print "</pre>";
 mysqli_free_result($result);
 mysqli_close($conn);
 ?>
-
+</p>
 <p> <a href="displayResults.txt" >Contents</a> of the PHP program that created this page. </p>
 </section>
 </body>
