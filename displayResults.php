@@ -18,12 +18,12 @@ or die('Error connecting to MySQL server.');
   <body>
   <section>
 <?php  
-$state = $_POST['c.customer_num'];
+$state = $_POST['state'];
 $state = mysqli_real_escape_string($conn, $state);
 // this is a small attempt to avoid SQL injection
 // better to use prepared statements
-$query = "SELECT c.fname, c.lname FROM customer c WHERE c.customer_num = ";
-$query = $query."'".$state."';";
+$query = "SELECT DISTINCT firstName, lastName FROM customer WHERE state = ";
+$query = $query."'".$state."' ORDER BY 2;";
 ?>
 
 <p>
