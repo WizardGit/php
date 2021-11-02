@@ -10,6 +10,7 @@ or die('Error connecting to MySQL server.');
 <html>
 <head>
   <title>Another Simple PHP-MySQL Program</title>
+  <link rel="stylesheet" href="displayResultsStyle.css" />  
   </head>
   
   <body bgcolor="white">
