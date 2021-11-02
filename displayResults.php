@@ -44,7 +44,7 @@ print "<pre>";
 while($row = mysqli_fetch_array($result, MYSQLI_BOTH))
 {
   print "\n";
-  print "$row[c.fname]  $row[c.lname] $row[city]";
+  print "$row[fname]  $row[lname] $row[city]";
 }
 print "</pre>";
 mysqli_free_result($result);
