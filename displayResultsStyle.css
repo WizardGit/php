@@ -24,7 +24,7 @@ section {
 }
 pre {
   background-color: rgba(0, 0, 255, 0.781);
-  max-height: 80vh;
+  max-height: 60vh;
   overflow: auto;
   border-top-width: 5px;
   border-color: black;  
