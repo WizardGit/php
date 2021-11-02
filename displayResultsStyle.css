@@ -24,6 +24,11 @@ section {
   overflow: scroll;
   max-height: fit-content;
 }
+pre {
+  
+  max-height: 80vh;
+  overflow: auto;
+}
 
 p {
   margin: 5px;
