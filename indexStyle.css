@@ -29,10 +29,9 @@ section h1 {
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   width: 100%;
   text-align: center;
-  background-color: red;  
-}
-section form {  
-  background-color: green;
+  border-bottom: 5px;
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
 }
 
 input[type=text]{  

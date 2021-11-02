@@ -51,7 +51,6 @@ mysqli_free_result($result);
 mysqli_close($conn);
 ?>
 </p>
-<p> <a href="displayResults.txt" >Contents</a> of the PHP program that created this page. </p>
 </section>
 </body>
 </html>	  
