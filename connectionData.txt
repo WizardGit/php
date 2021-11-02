@@ -4,6 +4,6 @@ $server = "ix.cs.uoregon.edu";
 $dbname ="bighitvideo";
 $user = "guest";
 $pass = "guest";
-$port="3522";
+$port="3128";
 
 ?>
