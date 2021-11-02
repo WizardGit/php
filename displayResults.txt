@@ -46,7 +46,7 @@ $conn = mysqli_connect($server, $user, $pass, $dbname, $port) or die('Error conn
       mysqli_free_result($result);
       mysqli_close($conn);
       ?>
-      <p> <a href="displayResults.html" >Contents</a>       of the PHP program that created this page. </p>	 
+      <p> <a href="displayResults.txt" >Contents</a>       of the PHP program that created this page. </p>	 
     </section> 
   </body>
 </html>
