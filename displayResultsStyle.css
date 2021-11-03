@@ -30,6 +30,14 @@ pre {
   border-color: black;  
   border-style: solid;
 }
+a {
+  margin: 5px;
+  background: linear-gradient(to right, brown, #ffad06);
+  border: 0;
+  padding: 5px;
+  border-radius: 3px;
+  font-weight: bold;
+}
 
 p {
   margin: 5px;
