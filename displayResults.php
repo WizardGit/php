@@ -1,7 +1,7 @@
 <!--
 Author: Kaiser
 Original Author: Chris
-Date last edited: 11/1/2021
+Date last edited: 11/2/2021
 -->
 
 <?php
@@ -10,17 +10,14 @@ $conn = mysqli_connect($server, $user, $pass, $dbname, $port)
 or die('Error connecting to MySQL server.');
 ?>
 
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <title>Another Simple PHP-MySQL Program</title>
   <link rel="stylesheet" href="displayResultsStyle.css" />  
   </head>  
   <body>
-    <header>
-    <a href="index.html">Home</a>
-  </header>
   <section>
+  <a href="index.html">Back to Home Page</a>
     
 <?php  
 $state = $_POST['state'];
