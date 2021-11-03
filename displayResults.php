@@ -10,7 +10,8 @@ $conn = mysqli_connect($server, $user, $pass, $dbname, $port)
 or die('Error connecting to MySQL server.');
 ?>
 
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <title>Another Simple PHP-MySQL Program</title>
   <link rel="stylesheet" href="displayResultsStyle.css" />  
