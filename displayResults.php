@@ -16,8 +16,11 @@ or die('Error connecting to MySQL server.');
   <link rel="stylesheet" href="displayResultsStyle.css" />  
   </head>  
   <body>
-  <section>
+    <header>
     <a href="index.html">Home</a>
+  </header>
+  <section>
+    
 <?php  
 $state = $_POST['state'];
 $state = mysqli_real_escape_string($conn, $state);
