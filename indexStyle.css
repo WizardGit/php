@@ -33,7 +33,6 @@ section h1 {
   border-bottom-width: 5px;
   border-bottom-style: solid;
 }
-
 input[type=text]{  
   display: block;
   border-radius: 5px;
@@ -49,8 +48,6 @@ input[type=submit], input[type=reset] {
   border-radius: 3px;
   font-weight: bold;
 }
-
 p {
   margin: 5px;
 }
-
