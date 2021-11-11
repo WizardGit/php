@@ -33,11 +33,6 @@ Date last edited: 11/1/2021
                      <input type="submit" value="Submit">
                      <input type="reset" value="Erase">
               </form>
-              <p>
-                     You can view this html file <a href="./txtfiles/index.txt">HERE</a>.<br>
-                     You can view the php file <a href="./testfiles/displayResults.txt">HERE</a>.<br>
-                     You can view the connection data file <a href="connectionData.txt">HERE</a>.
-              </p>
        </section>
   </body>
 </html>
