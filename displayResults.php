@@ -21,10 +21,6 @@ or die('Error connecting to MySQL server.');
     
 <?php  
 $state = $_POST['state'];
-$figure = $_POST['figure'];
-print("|");
-print $figure;
-print("|");
 $state = mysqli_real_escape_string($conn, $state);
 // this is a small attempt to avoid SQL injection
 // better to use prepared statements
@@ -48,9 +44,6 @@ print $query;
 <?php
 $result = mysqli_query($conn, $query) or die(mysqli_error($conn));
 print "<pre>";
-print "|";
-print $figure;
-print "|";
 while($row = mysqli_fetch_array($result, MYSQLI_BOTH))
 {
   print "\n";
