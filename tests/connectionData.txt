@@ -3,5 +3,5 @@ $server = "ix.cs.uoregon.edu";
 $dbname ="stores7";
 $user = "guest";
 $pass = "guest";
-$port="352";
+$port="3522";
 ?>
