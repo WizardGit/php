@@ -12,7 +12,7 @@ $output = wordwrap($text, 60, "<br>");
 // better to use prepared statements
 $query = "SELECT distinct c.fname, c.lname
 from customer c
-inner join orders o on c.customer_num=o.customer_num";
+where c.fname like "frank"";
 
 
 $result = mysqli_query($conn, $query) or die(mysqli_error($conn));
