@@ -20,29 +20,23 @@ or die('Error connecting to MySQL server.');
   <a href="index.html">Back to Home Page</a>
     
 <?php  
-$state = $_POST['state'];
-$state = mysqli_real_escape_string($conn, $state);
+//$state = $_POST['state'];
+//$state = mysqli_real_escape_string($conn, $state);
 // this is a small attempt to avoid SQL injection
 // better to use prepared statements
 $query = "SELECT c.fname, c.lname from customer c where c.fname='frank'";
-
 $result = mysqli_query($conn, $query) or die(mysqli_error($conn));
-print "<pre>";
 while($row = mysqli_fetch_array($result, MYSQLI_BOTH))
 {
   print "\n";
   print "$row[fname]  $row[lname] ";
   if ($row[lname] == "Albertson")
-  {
-    
+  {    
     print "dang";
-  }
-    
+  }    
 }
-print "</pre>";
 mysqli_free_result($result);
 mysqli_close($conn);
-
 ?>
 </p>
 <script>

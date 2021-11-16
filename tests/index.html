@@ -28,27 +28,23 @@ Date last edited: 11/1/2021
                      Shimara, 
                      Smith).
                      <?php  
-
-$state = mysqli_real_escape_string($conn, $state);
+//$state = $_POST['state'];
+//$state = mysqli_real_escape_string($conn, $state);
 // this is a small attempt to avoid SQL injection
 // better to use prepared statements
 $query = "SELECT c.fname, c.lname from customer c where c.fname='frank'";
-
 $result = mysqli_query($conn, $query) or die(mysqli_error($conn));
 while($row = mysqli_fetch_array($result, MYSQLI_BOTH))
 {
   print "\n";
   print "$row[fname]  $row[lname] ";
   if ($row[lname] == "Albertson")
-  {
-    
+  {    
     print "dang";
-  }
-    
+  }    
 }
 mysqli_free_result($result);
 mysqli_close($conn);
-
 ?>
                      <p>
               <form action="https://ix.cs.uoregon.edu/~kaisers/php/tests/displayResults.php" method="POST">       
