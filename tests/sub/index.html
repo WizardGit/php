@@ -10,6 +10,7 @@ Date last edited: 11/1/2021
     <title>CIS 451</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="indexStyle.css" />    
+    <?php include 'displayResults.php';?>
   </head>
 
   <body>
@@ -28,16 +29,12 @@ Date last edited: 11/1/2021
                      Shimara, 
                      Smith).
                      <p>
-              <form action="https://ix.cs.uoregon.edu/~kaisers/php/displayResults.php" method="POST">       
-                     <input type="text" name="state">
-                     <input type="submit" value="Submit">
-                     <input type="reset" value="Erase">
-              </form>
-              <p>
-                     You can view this html file <a href="./txtfiles/index.txt">HERE</a>.<br>
-                     You can view the php file <a href="./txtfiles/displayResults.txt">HERE</a>.<br>
-                     You can view the connection data file <a href="connectionData.txt">HERE</a>.
-              </p>
+                     <script>
+                                   var phpadd= <?php add(1,2);?> //call the php add function
+                                   var phpmult= <?php echo mult(1,2);?> //call the php mult function
+                                   var phpdivide= <?php echo divide(1,2);?> //call the php divide function
+                                   
+                     </script>
        </section>
   </body>
 </html>
