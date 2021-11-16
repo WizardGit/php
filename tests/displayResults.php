@@ -37,13 +37,13 @@ while($row = mysqli_fetch_array($result, MYSQLI_BOTH))
 }
 mysqli_free_result($result);
 mysqli_close($conn);
-?>
-</p>
+
 <script>
   function jsfunction(){
     console.log("hellokaiser");
   }
   </script>
+  ?>
 </section>
 </body>
 </html>	  
