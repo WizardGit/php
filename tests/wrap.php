@@ -10,9 +10,7 @@ $output = wordwrap($text, 60, "<br>");
 
 // this is a small attempt to avoid SQL injection
 // better to use prepared statements
-$query = "SELECT distinct c.fname, c.lname
-from customer c
-where c.fname like "frank"'";
+$query = "SELECT distinct c.fname, c.lname from customer c where c.fname like 'frank'";
 
 
 $result = mysqli_query($conn, $query) or die(mysqli_error($conn));
