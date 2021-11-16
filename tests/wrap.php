@@ -19,15 +19,11 @@ inner join manufact m on s.manu_code=m.manu_code";
 
 
 $result = mysqli_query($conn, $query) or die(mysqli_error($conn));
-echo "55";
-//echo $result;
-echo "1";
+
 print "<pre>";
-echo "2";
 $row = mysqli_fetch_array($result, MYSQLI_BOTH);
 printf ("%s (%s)\n", $row["fname"], $row["lname"]);
-
-echo "6";
+printf ("%s (%s)\n", $row["fname"], $row["lname"]);
 print "</pre>";
 mysqli_free_result($result);
 mysqli_close($conn);
