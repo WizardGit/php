@@ -39,7 +39,7 @@ mysqli_free_result($result);
 mysqli_close($conn);
 
 echo "<script type='text/javascript'>\n";
-echo "console.log("hellokaiser")";
+alert("hello");
 echo "</script>";
 
   ?>
