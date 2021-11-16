@@ -16,9 +16,15 @@ $query = "SELECT distinct c.fname, c.lname from customer c where c.fname like 'f
 $result = mysqli_query($conn, $query) or die(mysqli_error($conn));
 
 print "<pre>";
-$row = mysqli_fetch_array($result, MYSQLI_BOTH);
-printf ("%s (%s)\n", $row["fname"], $row["lname"]);
-printf ("%s (%s)\n", $row["fname"], $row["lname"]);
+
+while($row = mysqli_fetch_array($result, MYSQLI_BOTH))
+{
+  print "\n";
+  printf ("%s (%s)\n", $row["fname"], $row["lname"]);
+}
+
+
+
 print "</pre>";
 mysqli_free_result($result);
 mysqli_close($conn);
