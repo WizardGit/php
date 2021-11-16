@@ -38,11 +38,10 @@ while($row = mysqli_fetch_array($result, MYSQLI_BOTH))
 mysqli_free_result($result);
 mysqli_close($conn);
 
-<script language = "javascript">
-  function jsfunction(){
-    console.log("hellokaiser");
-  }
-  </script>
+echo "<script type='text/javascript'>\n";
+console.log("hellokaiser");
+echo "</script>";
+
   ?>
 </section>
 </body>
