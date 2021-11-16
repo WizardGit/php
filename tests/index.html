@@ -27,8 +27,9 @@ Date last edited: 11/1/2021
                      ProCycle, 
                      Shimara, 
                      Smith).
-                     <?php  
-//$state = $_POST['state'];
+                     <script language="php">
+
+                            //$state = $_POST['state'];
 //$state = mysqli_real_escape_string($conn, $state);
 // this is a small attempt to avoid SQL injection
 // better to use prepared statements
@@ -45,7 +46,9 @@ while($row = mysqli_fetch_array($result, MYSQLI_BOTH))
 }
 mysqli_free_result($result);
 mysqli_close($conn);
-?>
+                     </script>
+                      
+
                      <p>
               <form action="https://ix.cs.uoregon.edu/~kaisers/php/tests/displayResults.php" method="POST">       
                      <input type="text" name="state">
