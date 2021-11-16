@@ -21,8 +21,9 @@ $query = $query."'".$state."'order by c.fname, c.lname asc;";
 
 
 $result = mysqli_query($conn, $query) or die(mysqli_error($conn));
+printf ("%s (%s)\n", $row[0], $row[1]);
 echo "55";
-echo $result;
+//echo $result;
 echo "1";
 print "<pre>";
 echo "2";
