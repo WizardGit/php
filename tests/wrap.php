@@ -22,7 +22,7 @@ $query = $query."'".$state."'order by c.fname, c.lname asc;";
 
 $result = mysqli_query($conn, $query) or die(mysqli_error($conn));
 $row = mysqli_fetch_array($result, MYSQLI_BOTH);
-printf ("%s (%s)\n", $row[fname],  $row[lname]);
+printf ("%s (%s) |%s|\n", $row[fname],  $row[lname], $row[description]);
 echo "55";
 //echo $result;
 echo "1";
