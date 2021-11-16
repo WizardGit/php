@@ -27,6 +27,9 @@ while($row = mysqli_fetch_array($result, MYSQLI_BOTH))
 {
   print "\n";
   print "$row[fname]  $row[lname] $row[description]";
+  echo "uGHHHHHHHH";
+  echo "$row[fname]  $row[lname] $row[description]";
+  echo "uGHHHHHHHH";
 }
 print "</pre>";
 mysqli_free_result($result);
