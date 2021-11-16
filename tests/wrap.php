@@ -21,13 +21,14 @@ $query = $query."'".$state."'order by c.fname, c.lname asc;";
 
 
 $result = mysqli_query($conn, $query) or die(mysqli_error($conn));
-printf ("%s \n", $row[fname]  $row[lname] $row[description]);
+$row = mysqli_fetch_array($result, MYSQLI_BOTH);
+printf ("%s (%s)\n", $row[fname],  $row[lname]);
 echo "55";
 //echo $result;
 echo "1";
 print "<pre>";
 echo "2";
-while($row = mysqli_fetch_array($result, MYSQLI_BOTH))
+/*while($row = mysqli_fetch_array($result, MYSQLI_BOTH))
 {
     echo "3";
   //print "\n";
@@ -35,7 +36,7 @@ while($row = mysqli_fetch_array($result, MYSQLI_BOTH))
   echo "4";
   echo "$row[fname]  $row[lname] $row[description]";
   echo "5";
-}
+}*/
 echo "6";
 print "</pre>";
 mysqli_free_result($result);
