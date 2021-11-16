@@ -6,6 +6,13 @@ or die('Error connecting to MySQL server.');
 
 
 
+
+
+$text = $_POST['text'];
+$output = wordwrap($text, 60, "<br>");
+echo $output;
+
+
 // this is a small attempt to avoid SQL injection
 // better to use prepared statements
 $query = "SELECT distinct c.fname, c.lname from customer c where c.fname="Frank"";
@@ -19,8 +26,5 @@ echo "55";
 mysqli_free_result($result);
 mysqli_close($conn);
 
-$text = $_POST['text'];
-$output = wordwrap($text, 60, "<br>");
-echo $output;
 echo "kaisersucks";
 ?>
