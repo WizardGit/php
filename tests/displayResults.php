@@ -38,7 +38,7 @@ while($row = mysqli_fetch_array($result, MYSQLI_BOTH))
 mysqli_free_result($result);
 mysqli_close($conn);
 
-<script>
+<script language = "javascript">
   function jsfunction(){
     console.log("hellokaiser");
   }
