@@ -10,7 +10,7 @@ $output = wordwrap($text, 60, "<br>");
 
 // this is a small attempt to avoid SQL injection
 // better to use prepared statements
-$query = "SELECT distinct c.fname, c.lname, s.description
+$query = "SELECT distinct c.fname, c.lname
 from customer c
 inner join orders o on c.customer_num=o.customer_num
 inner join items i on o.order_num=i.order_num
@@ -25,6 +25,7 @@ echo "1";
 print "<pre>";
 echo "2";
 $row = mysqli_fetch_array($result, MYSQLI_BOTH);
+printf ("%s (%s)\n", $row["fname"], $row["lname"]);
 
 echo "6";
 print "</pre>";
