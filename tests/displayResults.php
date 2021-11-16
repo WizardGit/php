@@ -41,8 +41,11 @@ while($row = mysqli_fetch_array($result, MYSQLI_BOTH))
 {
   print "\n";
   print "$row[fname]  $row[lname] ";
-  if $row[lname] = "albertson";
+  if ($row[lname] = "albertson")
+  {
     print "dang";
+  }
+    
 }
 print "</pre>";
 mysqli_free_result($result);
