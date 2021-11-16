@@ -8,11 +8,11 @@ or die('Error connecting to MySQL server.');
 
 // this is a small attempt to avoid SQL injection
 // better to use prepared statements
-$query = "SELECT distinct c.fname, c.lname from customer c where c.fname="Frank";";
+$query = "SELECT distinct c.fname, c.lname from customer c where c.fname="Frank"";
 
 
 $result = mysqli_query($conn, $query) or die(mysqli_error($conn));
-$row = mysqli_fetch_array($result, MYSQLI_ASSOC);
+$row = mysqli_fetch_array($result, MYSQLI_BOTH);
 echo "55";
 printf ("%s (%s) \n", $row[fname],  $row[lname]);
 echo "55";
