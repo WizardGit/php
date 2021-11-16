@@ -25,16 +25,7 @@ $state = mysqli_real_escape_string($conn, $state);
 // this is a small attempt to avoid SQL injection
 // better to use prepared statements
 $query = "SELECT c.fname, c.lname from customer c where c.fname='frank'";
-?>
 
-<p> <h2>The query:</h2> <p>
-<?php
-print $query;
-?>
-
-<p> <h2>Result of query:</h2> <p>
-<p>
-<?php
 $result = mysqli_query($conn, $query) or die(mysqli_error($conn));
 print "<pre>";
 while($row = mysqli_fetch_array($result, MYSQLI_BOTH))
@@ -51,11 +42,6 @@ while($row = mysqli_fetch_array($result, MYSQLI_BOTH))
 print "</pre>";
 mysqli_free_result($result);
 mysqli_close($conn);
-
-echo '<script type="text/javascript">',
-     'jsfunction();',
-     '</script>'
-;
 
 ?>
 </p>
