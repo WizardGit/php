@@ -21,19 +21,19 @@ $query = $query."'".$state."'order by c.fname, c.lname asc;";
 
 
 $result = mysqli_query($conn, $query) or die(mysqli_error($conn));
-echo "uGHHHHHHHH";
+echo "1";
 print "<pre>";
-echo "uGHHHHHHHH";
+echo "2";
 while($row = mysqli_fetch_array($result, MYSQLI_BOTH))
 {
-    echo "uGHHHHHHHH";
-  print "\n";
-  print "$row[fname]  $row[lname] $row[description]";
-  echo "uGHHHHHHHH";
+    echo "3";
+  //print "\n";
+  //print "$row[fname]  $row[lname] $row[description]";
+  echo "4";
   echo "$row[fname]  $row[lname] $row[description]";
-  echo "uGHHHHHHHH";
+  echo "5";
 }
-echo "uGHHHHHHHH";
+echo "6";
 print "</pre>";
 mysqli_free_result($result);
 mysqli_close($conn);
